@@ -97,6 +97,25 @@ def sirip_punggung():
 def sirip_ekor():
     return render_template("17_Sirip_Ekor.html")
 
+@app.route("/morfometrik")
+def morfometrik():
+    return render_template("18_Morfometrik.html")
+
+@app.route("/meristik")
+def meristik():
+    return render_template("19_Meristik.html")
+
+@app.route("/quiz_gform")
+def quiz_gform():
+    return render_template("20_Quiz_Gform.html")
+
+@app.route("/quiz_quizizz")
+def quiz_quizizz():
+    return render_template("21_Quiz_(Quizizz).html")
+
+@app.route("/referensi")
+def referensi():
+    return render_template("22_Referensi.html")
 
 @app.route('/detect', methods=['POST'])
 def detect():
